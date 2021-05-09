@@ -1,0 +1,566 @@
+/* ====================
+Common CSS
+=======================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.container{
+    width: 96%;
+    margin: 0 auto;
+}
+body{
+    margin: 0 auto;
+    width: 1000px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* ====================
+top_header_area
+=======================*/
+.top_header_area{
+    background: #ba2e1f;
+    width: 100%;
+    padding: 15px 0px;
+    overflow: hidden;
+}
+.top_header_menu{
+    width: 70%;
+}
+.top_header_menu ul{
+    text-align: left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.top_header_menu ul li{
+    display: inline-block;
+    margin-right: 5px;
+    border-right: 2px solid white;
+    padding-right: 5px;
+}
+.top_header_menu ul li:last-child{
+    border-right: none;
+}
+.top_header_menu ul li a{
+    color: white;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search_box{
+    width: 30%;
+    float: right;
+}
+.search_box form{
+    width: 100%;
+    max-width: 210px;
+    background: white;
+    border-radius: 25px;
+    padding: 5px;
+    float: right;
+}
+.search_box form input[type='text']{
+    border: none;
+    color: black;
+    padding-left: 5px;
+}
+.search_box form input[type='text']:focus{
+    outline: none;
+}
+.search_box form input[type='submit']{
+    background: url(img/searchicon.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2px 10px;
+    float: right;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.main_header_area{
+    padding: 40px 0px;
+}
+.logo{
+    width: 40%;
+    margin-bottom: 40px;
+}
+.logo img{
+    width: 240px;
+}
+.social_menu{
+    width: 50%;
+    padding-right: 20px;
+}
+.social_menu ul{
+    text-align: right;
+}
+.social_menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.social_menu ul li a{
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+.social_menu ul li a i{
+   background-color: black;
+   height: 20px;
+   width: 20px;
+   padding: 5px;
+    border-radius: 50%;
+}
+.social_menu ul li a i:hover{
+    background: orange;
+}
+
+
+/* ====================
+    Main menu css
+=======================*/
+
+.main_menu{
+    clear: both;
+    background:linear-gradient(to top ,#2b2b2b 50%, #333333 50%);
+    padding: 15px;
+    border-radius: 5px;
+
+}
+.main_menu ul{
+    text-align: center;
+}
+.main_menu ul li{
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+.main_menu ul li a{
+    color: white;
+    font-size: 16px;
+    padding: 15px 0px;
+    text-transform: uppercase;
+}
+.main_menu ul li a:hover{
+    color: #b92d1f;
+}
+.main_menu ul li ul{
+    width: 200px;
+    position: absolute;
+    background:linear-gradient(to top ,#2b2b2b 50%, #333333 50%);
+    top: 175%;
+    display: none;
+}
+.main_menu ul li ul li{
+    display: block;
+    padding: 15px 15px;
+    margin-right: 0;
+}
+.main_menu ul li ul li a{
+    padding: 15px 15px;
+}
+.main_menu ul li:hover ul{
+    display: block;        
+}
+.main_menu ul li:hover > a{
+    color: #b92d1f;
+}
+
+/* ====================
+    Hero area section css
+=======================*/
+
+.hero_area{
+    margin-top: 25px;
+}
+.image_sec{
+    width: 45%;
+    margin-right: 2%;
+}
+.content_hero{
+    width: 53%;
+}
+.content_hero h2{
+    font-size: 86px;
+    font-weight: normal;
+    line-height: 1.3em;
+}
+.content_hero p{
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.3em;
+}
+.content_hero a{
+    font-size: 16px;
+    color: #b92d1f;
+    float: right;
+    margin-top:10px ;
+}
+
+/* ====================
+    about  section css
+=======================*/
+
+.about_sec{
+    clear: both;
+    background: #f2f2f2;
+    padding-top: 55px;
+}
+.main_div{
+    display: flex;
+}
+.about,.services,.testimonial{
+    width: 32%;
+    margin: 1%;
+}
+.about h2, .services h2, .testimonial h2{
+    margin-bottom:55px ;
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+}
+.about p{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 15px;
+    color: #878787;
+}
+.about a{
+    font-size: 16px;
+    color: #b92d1f;
+    float: right;
+    margin-top:10px ;
+}
+.under_services{
+    display: flex;
+    margin-bottom: 30px;
+}
+.service_img{
+    margin-right: 4%;
+}
+.service_content h3{
+    color: #878787;
+    font-size: 16px;
+}
+.service_content p{
+    margin-top: 15px;
+    color: #878787;
+    font-size: 15px;
+}
+.services a{
+    font-size: 16px;
+    color: #b92d1f;
+    float: right;
+    margin-top:10px ;
+}
+
+.under_testimonial h3{
+    color: #989898;
+    font-size: 16px;
+    background:url(img/comma.png);
+    background-repeat: no-repeat;
+    padding: 15px 0px;
+    padding-left: 65px;
+}
+.under_testimonial h3 span{
+    font-weight: normal;
+}
+.under_testimonial p{
+    margin-top: 10px;
+    color: #878787;
+    text-align: justify;
+    font-weight: 15px;
+    line-height: 1.3em;
+}
+.under_testimonial a{
+    font-size: 16px;
+    color: #b92d1f;
+    float: right;
+    margin-top:10px ; 
+}
+.under_testimonial{
+    margin-bottom: 45px;
+}
+
+/* ====================
+    footer section css
+=======================*/
+#footer_sec{
+    padding-top: 30px;
+    display: flex;
+}
+.sub_footer_sec{
+    width: 24%;
+    margin-right: 3%;
+}
+.sub_footer_sec h2{
+    text-transform: uppercase;
+    padding-top: 20px;
+    border-top: 1px solid #666666;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666666;
+    padding-bottom: 30px;
+}
+.sub_footer_sec p{
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin-bottom: 25px;
+}
+.sub_footer_sec p a{
+    color: #b92d1f;
+    font-size: 14px;
+}
+.sub_footer_sec ul li{
+    list-style-type: none;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 10px;
+    background: url(img/list.png) no-repeat center left;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.sub_footer_sec ul li a{
+    font-size: 14px;
+    color: #666666;
+
+}
+.sub_footer_sec p .post_title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.sub_footer_sec p .admin{
+    color: #b92d1f;
+}
+.sub_footer_sec p .blog_content{
+    padding-top: 20px;
+}
+.sub_footer_sec p a{
+    font-size: 14px;
+    color: #b92d1f; 
+    float: right;
+    margin-top:10px ; 
+}
+.blog_post{
+    padding-bottom: 25px;
+}
+
+.sub_footer_sec form input{
+    background: #f2f2f2;
+    width: 100%;
+    border: 0px solid;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.sub_footer_sec form input:focus{
+    outline: none;
+}
+.sub_footer_sec form textarea{
+    background: #f2f2f2;
+    width: 100%;
+    border: 0px solid;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.sub_footer_sec form textarea:focus{
+    outline: none;
+}
+.sub_footer_sec form input[type='submit']{
+    color: #b92d1f;
+    width: auto;
+    padding: 10px 15px ;
+}
+.copyright{
+    margin-top: 30px;
+    background: #f2f2f2;
+    clear: both;
+    width: 100%;
+    height: 65px;
+}
+.copyright h3{
+    padding-top: 25px;
+    font-size: 14px;
+    color: #919191;
+    font-weight: normal;
+}
+
+
+/*====================
+ Responsive css
+================== */
+
+@media only screen and (min-width:992px) and (max-width:999px){
+
+    body{
+        width: auto;
+    }
+
+}
+
+/* tablet mode  */
+@media only screen and (min-width:768px) and (max-width:991px){
+
+    body{
+        width: auto;
+    }
+    .main_menu ul li a {
+        font-size: 12px;
+    }
+    .about h2, .services h2, .testimonial h2 {
+        font-size: 24px;
+    }
+   
+}
+
+
+/* mobile device */
+@media only screen and (min-width:480px) and (max-width:767px){
+
+    body{
+        width: auto;
+    }
+    .search_box {
+        width: 44%;
+        padding-top: 10px;
+    }
+    .main_menu ul li a {
+        font-size: 12px;
+    }
+    .about h2, .services h2, .testimonial h2 {
+        font-size: 24px;
+    }
+    .main_div {
+        flex-direction: column;
+    }
+    .about, .services, .testimonial {
+        width: 80%;
+        margin-top: 30px;
+    }
+    #footer_sec {
+        flex-direction: column;
+    }
+    .sub_footer_sec {
+        width: 80%;
+    }
+    .copyright {
+        height: 100px;
+    }
+    .image_sec {
+        width: 100%;
+        margin-right: 0%;
+    }
+    .content_hero {
+        width: 100%;
+    }
+    .content_hero h2 {
+        font-size: 60px;
+    }
+    .main_menu ul li ul {
+        width: 150px;       
+        top: 100%;
+        z-index: 2;
+    }
+    .about_sec {
+        padding-top: 20px;
+    }
+    .top_header_area{
+        padding-top: 65px;
+    }
+
+}
+
+/* for small device */
+@media only screen and (min-width:200px) and (max-width:479px){
+
+    body{
+        width: auto;
+    }
+    .search_box {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .main_menu ul li a {
+        font-size: 12px;
+    }
+    .about h2, .services h2, .testimonial h2 {
+        font-size: 24px;
+    }
+    .main_div {
+        flex-direction: column;
+    }
+    .about, .services, .testimonial {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #footer_sec {
+        flex-direction: column;
+    }
+    .sub_footer_sec {
+        width: 100%;
+    }
+    .copyright {
+        height: 100px;
+    }
+    .image_sec {
+        width: 100%;
+        margin-right: 0%;
+    }
+    .content_hero {
+        width: 100%;
+    }
+    .content_hero h2 {
+        font-size: 45px;
+    }
+    .main_menu ul li ul {
+        width: 150px;       
+        top: 100%;
+        z-index: 2;
+    }
+    .top_header_menu {
+        width: 100%;
+    }
+    .about h2, .services h2, .testimonial h2 {
+        margin-bottom: 35px;
+    }
+    .about_sec {
+        padding-top: 20px;
+    }
+    .social_menu {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .logo {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .sub_footer_sec form input {
+        width: 95%;
+    }
+    .sub_footer_sec form textarea {
+        width: 95%;
+    }
+    .top_header_area{
+        padding-top: 65px;
+    }
+}
